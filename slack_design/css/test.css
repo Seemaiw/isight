@@ -1,0 +1,34 @@
+  .dropdown-menu 
+  {
+  	width: 500px !important;
+  }
+  
+  .dropdown-item
+  {
+  	font-size:12px;
+  }
+  .dropdown-item:active
+  {
+  	font-size:12px;
+  }
+  .dropdown-item:hover
+  {
+  	background:#fff;
+  	
+  	
+  	
+  	
+  }
+  .groupb-filter-title{font-size:12px; opacity:0.6 }
+  
+  .groupb-reset
+  {
+  	background:none;
+  	border:none;
+  	padding-top:0px;
+  }
+  .groupb-reset:active{border:none;}
+  
+  .groupb-flex{border-top:solid thin #eee;}
+  .groupb-outer-flex{border-top:solid thin #eee;}
+  #flexx{border-bottom:solid thin #eee;}

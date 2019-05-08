@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Team Member | Slack</title>
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" type="text/css" href="css/manage.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row" id="toprow">
+			<div class="col-md-1"></div>
+			<div class="col-md-8">
+				<p><b class="phead">Manage members</b><button id="managebtn" aria-label="Download a CSV member list"><i class="fas fa-cloud-download-alt"></i><span class="tooltiptext"><b>Download a CSV member list</b></span></button></p>
+			</div>
+			<div class="col-md-3">
+				<button id="invitebtn" type="submit" class="btn btn-success"><b>Invite People</b></button>
+			</div>
+		</div>
+		<div class="row" id="toprow1">
+			<div class="col-md-1"></div>
+			<div class="col-md-8">
+				<div class="form-group has-search">
+  					<span class="fa fa-search form-control-feedback"></span>
+  					<input type="text" class="form-control" placeholder="Search current members">
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="btn-group">
+  					<button type="button" id="filterbtn" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    					<span class="filter"><img src="img/filter.png" class="filterimg"><b class="filtername">Filters</b><i class="fas fa-angle-down" id="angle"></i></span>
+  					</button>
+  					<div class="dropdown-menu dropdown-menu-right" id="drop_filterbox">
+    					<div class="dropdown-item">
+    						Filter by<a href=""><u>Reset filters</u></a>
+    					</div>
+    					 <a class="dropdown-item" href="#">Action</a>
+    					 <a class="dropdown-item" href="#">Another action</a>
+    					 <a class="dropdown-item" href="#">Something else here</a>
+  					</div>
+				</div>
+			</div>	
+		</div>
+		<div class="row" id="namerow">
+			<div class="col-md-2"></div>
+			<div class="col-md-8">
+				<table class="table table-hover">
+  					<thead class="tablehead">
+						<tr>
+						  <th scope="col"><a href="" id="uiname">Name</a><i class="fas fa-arrow-down" id="downicon"></i></th>
+						  <th scope="col"><a href="">Account type</a></th>
+						  <th scope="col"><a href="">Billing status</a></th>
+						  <th scope="col"><a href="">Authentication</a></th>
+						  <th></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+						    <td scope="row">
+						        <img src="img/user.png" class="rounded">      
+						      	<span class="username"><b>Seema Thapa(you)</b></span><br>
+						      	<span class="mail">simathapa111@gmail.com</span>
+						    </td>
+						    <td><i class="fas fa-ruler-vertical" id="ruler"></i>  Primary Owner</td>
+						    <td>Active</td>
+						    <td>Default</td>
+						    <td>
+						    	<div class="btn-group">
+  									<button type="button" id="optionButton" class="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    									<a href="" id="iconlink"><i class="fas fa-ellipsis-h" id="optionIcon"></i></a>
+  									</button>
+  									<div class="dropdown-menu dropdown-menu-right">
+    									<button class="dropdown-item" type="button">Edit your info</button>
+    									<div class="dropdown-divider"></div>
+    									<button class="dropdown-item" type="button">Transfer ownership <i class="fas fa-external-link-alt" id="external"	></i></button>
+  									</div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+						    <td scope="row" id="userhead">
+						    	<img src="img/user.png" class="rounded">      
+						      	<span class="username"><b>Basna Ranjitkar</b></span><br>
+						      	<span class="mail">Basna Ranjitkar <i class="fas fa-circle" id="circle"></i> basnaranjitkar1138@gmail.com</span>
+						    </td>
+						    <td><i class="fas fa-ruler-vertical" id="ruler"></i>  Full member</td>
+						    <td>Active</td>
+						    <td>Default</td>
+						    <td>
+						    	<div class="btn-group">
+  									<button type="button" id="optionButton" class="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    									<a href="" id="iconlink"><i class="fas fa-ellipsis-h" id="optionIcon"></i></a>
+  									</button>
+  									<div class="dropdown-menu dropdown-menu-right">
+    									<button class="dropdown-item" type="button">Change to owner</button>
+    									<button class="dropdown-item" type="button">Change to Admin</button>
+    									<button class="dropdown-item" type="button">Change to guest</button>
+    									<div class="dropdown-divider"></div>
+    									<button class="dropdown-item" type="button">Deactivate account</button>
+  									</div>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="table table-hover" id="table2">
+					<tbody>
+						<tr>
+						    <td scope="row">
+						     	<img src="img/userlist.png" class="rounded" id="userlist">   
+						    </td>
+						    <td>
+						    	<span><b>Didn’t find what you’re looking for? </b>Some members may be hidden because of the filters you’ve selected.
+						      		<a href="" id="showmember">Show all members</a>
+						      	</span>
+						    </td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="col-md-2"></div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

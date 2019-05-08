@@ -1,0 +1,49 @@
+<div class="row mb-4" id="flexx">
+	<div class="dropdown col-2">
+		<a class="dropdown-toggle  btn-light" id="dropdownMenuButton"
+		style="" data-toggle="dropdown"
+		aria-haspopup="true" aria-expanded="false">
+		<i class="fa fa-sliders" aria-hidden="true"></i><img src="img/filter.png" class="filterimg"> Filter</a>
+		<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+			<div class="container-fluid " aria-labelledby="dropdownMenuButton">
+				<div class="row">
+					<div class="col-lg-2">
+						<small href="#" id="small">
+							<strong>Filter by</strong>
+						</small>
+					</div>
+					<div class="col-lg-3 offset-7">
+						<small href="#" id="small">
+							<a href="#"><strong>Reset Filter</strong></a>
+						</small>
+					</div>
+				</div>
+				<div class="row" id="rowfilter">
+					<div class="col-lg-4">
+						<label class="groupb-filter-title">Account type</label><br>
+						<label class="small"><input type="checkbox" onchange="searchs(this)" name="filters" value="Owner" class="filter" />Workspace owner</label>
+						<label class="small"><input type="checkbox" onchange="searchs(this)" name="filters" value="Admin" class="filter" />Workspace admin</label>
+						<label class="small"><input type="checkbox" onchange="searchs(this)" name="filters" value="Full member" class="filter" />Full members</label><br>
+						<label class="small"><input type="checkbox" name="filters" value="Guest" class="filter" />Guest</label>
+					</div>
+					<div class="col-lg-3">
+						<label class="groupb-filter-title">Billing status</label><br>
+						<label class="small"><input type="checkbox" name="filters" onchange="searchs(this)" value="active" class="filter" />Active</label><br>
+						<label class="small"><input type="checkbox" name="filters" onchange="searchs(this)" class="filter" value="inactive" />Inactive</label>
+					</div>
+					<div class="col-lg-5" id="rowfilter1">
+						<label class="groupb-filter-title">Authentication</label><br>
+						<label class="small"><input type="checkbox" href="#" />Two-factor(2FA)</label><br>
+						<label class="small"><input type="checkbox" href="#" />SSO</label><br>
+						<label class="small"><input type="checkbox" href="#" />Default</label>
+					</div>
+				</div>
+				<div class="row" id="rowfilter">
+					<div class="col-lg-8">
+						<label class="small"><input type="checkbox" href="#" value="Deactivate" class="filter" name="deactivatedaccount" />Show deactivated accounts.</label>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

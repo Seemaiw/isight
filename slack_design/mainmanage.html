@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Team Member | Slack</title>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="stylesheet" type="text/css" href="css/mainmanage.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="#"><i class="fas fa-home" width="30" height="30" class="d-inline-block align-top" alt=""></i> <b>hustler_ceo</b></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Link</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Dropdown
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#">Something else here</a>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+				</li>
+			</ul>
+			<form class="form-inline my-2 my-lg-0">
+				<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+			</form>
+		</div>
+	</nav>
+	<div class="container-fluid">
+		<div class="row" id="toprow">
+			<div class=" col-md-2" id="sidebar">
+				<div class="bg-light" id="sidebar-wrapper">
+					<div class="row sidebar-heading">
+						<div id="userdiv">
+							<img src="img/user.png" id="userimg" class="img-thumbnail">
+						</div>
+						<div id="SignDiv">
+							<span>signed in as<a href=""> Signout</a></span>
+						</div>
+					</div>
+					<div class="list-group list-group-flush">
+						<small class="groupb-side-head">ACCOUNT	</small>
+						<small><a href="#" class="list-group-item list-group-item-action bg-light"><i class="fas fa-arrow-left icon-opacity"></i> Back to slack</a></small>
+						<small><a href="#" class="list-group-item list-group-item-action bg-light"><i class="fa fa-fw fa-home icon-opacity"></i> Home</a></small>
+						<small><a href="#" class="list-group-item list-group-item-action bg-light"><i class="fa fa-fw fa-user icon-opacity"></i> Account & profile</a></small>
+						<small><a href="#" class="list-group-item list-group-item-action bg-light"><i class="fa fa-plug icon-opacity"></i> Configure apps</a></small>
+						<small><a href="#" class="list-group-item list-group-item-action bg-light"><i class="far fa-clock icon-opacity"></i> Analytics</a></small>
+						<small><a href="#" class="list-group-item list-group-item-action bg-light"><i class="fas fa-magic icon-opacity"></i> Customize</a></small>
+						<small><a href="#" class="list-group-item list-group-item-action bg-light"><i class="fas fa-info-circle icon-opacity"></i> About this workspace</a></small>
+						<br>
+						<small class="groupb-side-head">ADMINISTRATION</small>
+						<small><a href="#" class="list-group-item list-group-item-action bg-light"><i class="fas fa-cog icon-opacity"></i> Settings & permissions</a></small>
+						<small><a href="#" class="list-group-item list-group-item-action bg-light"><i class="fas fa-tasks icon-opacity"></i> Manage members</a></small>
+						<small><a href="#" class="list-group-item list-group-item-action bg-light"><i class="fas fa-users icon-opacity"></i> User groups</a></small>
+						<small><a href="#" class="list-group-item list-group-item-action bg-light"><i class="fas fa-user-plus icon-opacity"></i> Invitations</a></small>
+						<small><a href="#" class="list-group-item list-group-item-action bg-light"><i class="fa fa-credit-card-alt icon-opacity" aria-hidden="true"></i> Billing</a></small>
+						<small><a href="#" class="list-group-item list-group-item-action bg-light"><i class="fas fa-key icon-opacity"></i> Authentication</a></small>
+						<br>
+						<small class="groupb-side-head">OTHER</small>
+						<small><a href="#" class="list-group-item list-group-item-action bg-light">Tour</a></small>
+						<small><a href="#" class="list-group-item list-group-item-action bg-light">Download apps</a></small>
+						<small><a href="#" class="list-group-item list-group-item-action bg-light">Brand guidelines</a></small>
+						<small><a href="#" class="list-group-item list-group-item-action bg-light">Help</a></small>
+						<small><a href="#" class="list-group-item list-group-item-action bg-light">API</a></small>
+						<small><a href="#" class="list-group-item list-group-item-action bg-light">Gateways</a></small>
+						<small><a href="#" class="list-group-item list-group-item-action bg-light">Pricing</a></small>
+						<small><a href="#" class="list-group-item list-group-item-action bg-light">Contact</a></small>
+						<small><a href="#" class="list-group-item list-group-item-action bg-light">Policies</a></small>
+						<small><a href="#" class="list-group-item list-group-item-action bg-light">Our blog</a></small>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-9">
+				<div class="col-md-12">
+					<div class="col-md=9">
+						<p><b class="phead">Manage members</b><button id="managebtn" aria-label="Download a CSV member list"><i class="fas fa-cloud-download-alt"></i><span class="tooltiptext"><b>Download a CSV member list</b></span></button></p>
+						<div class="form-group has-search">
+							<span class="fa fa-search form-control-feedback"></span>
+							<input type="text" class="form-control" placeholder="Search current members">
+						</div>
+					</div>
+				</div>
+				<table class="table table-hover">
+					<thead class="tablehead">
+						<tr>
+							<th scope="col"><a href="" id="uiname">Name</a><i class="fas fa-arrow-down" id="downicon"></i></th>
+							<th scope="col"><a href="">Account type</a></th>
+							<th scope="col"><a href="">Billing status</a></th>
+							<th scope="col"><a href="">Authentication</a></th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td scope="row">
+								<img src="img/user.png" class="rounded">      
+								<span class="username"><b>Seema Thapa(you)</b></span><br>
+								<span class="mail">simathapa111@gmail.com</span>
+							</td>
+							<td><i class="fas fa-ruler-vertical" id="ruler"></i>  Primary Owner</td>
+							<td>Active</td>
+							<td>Default</td>
+							<td>
+								<div class="btn-group">
+									<button type="button" id="optionButton" class="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										<a href="" id="iconlink"><i class="fas fa-ellipsis-h" id="optionIcon"></i></a>
+									</button>
+									<div class="dropdown-menu dropdown-menu-right">
+										<button class="dropdown-item" type="button">Edit your info</button>
+										<div class="dropdown-divider"></div>
+										<button class="dropdown-item" type="button">Transfer ownership <i class="fas fa-external-link-alt" id="external"	></i></button>
+									</div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td scope="row" id="userhead">
+								<img src="img/user.png" class="rounded">      
+								<span class="username"><b>Basna Ranjitkar</b></span><br>
+								<span class="mail">Basna Ranjitkar <i class="fas fa-circle" id="circle"></i> basnaranjitkar1138@gmail.com</span>
+							</td>
+							<td><i class="fas fa-ruler-vertical" id="ruler"></i>  Full member</td>
+							<td>Active</td>
+							<td>Default</td>
+							<td>
+								<div class="btn-group">
+									<button type="button" id="optionButton" class="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										<a href="" id="iconlink"><i class="fas fa-ellipsis-h" id="optionIcon"></i></a>
+									</button>
+									<div class="dropdown-menu dropdown-menu-right">
+										<button class="dropdown-item" type="button">Change to owner</button>
+										<button class="dropdown-item" type="button">Change to Admin</button>
+										<button class="dropdown-item" type="button">Change to guest</button>
+										<div class="dropdown-divider"></div>
+										<button class="dropdown-item" type="button">Deactivate account</button>
+									</div>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="table table-hover" id="table2">
+					<tbody>
+						<tr>
+							<td scope="row">
+								<img src="img/userlist.png" class="rounded" id="userlist">   
+							</td>
+							<td>
+								<span><b>Didn’t find what you’re looking for? </b>Some members may be hidden because of the filters you’ve selected.
+									<a href="" id="showmember">Show all members</a>
+								</span>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="col-md-1">
+				<button id="invitebtn" type="submit" class="btn btn-success"><b>Invite People</b></button>
+				<div class="row mb-4" id="flexx">
+					<div class="dropdown col-2">
+						<a class="dropdown-toggle  btn-light" id="dropdownMenuButton"
+						style="" data-toggle="dropdown"
+						aria-haspopup="true" aria-expanded="false">
+						<i class="fa fa-sliders" aria-hidden="true"></i><img src="img/filter.png" class="filterimg"> Filter</a>
+						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+							<div class="container-fluid " aria-labelledby="dropdownMenuButton">
+								<div class="row">
+									<div class="col-lg-2">
+										<small href="#" id="small">
+											<strong>Filter by</strong>
+										</small>
+									</div>
+									<div class="col-lg-3 offset-7">
+										<small href="#" id="small">
+											<a href="#"><strong>Reset Filter</strong></a>
+										</small>
+									</div>
+								</div>
+								<div class="row" id="rowfilter">
+									<div class="col-lg-4">
+										<label class="groupb-filter-title">Account type</label><br>
+										<label class="small"><input type="checkbox" onchange="searchs(this)" name="filters" value="Owner" class="filter" />Workspace owner</label>
+										<label class="small"><input type="checkbox" onchange="searchs(this)" name="filters" value="Admin" class="filter" />Workspace admin</label>
+										<label class="small"><input type="checkbox" onchange="searchs(this)" name="filters" value="Full member" class="filter" />Full members</label><br>
+										<label class="small"><input type="checkbox" name="filters" value="Guest" class="filter" />Guest</label>
+									</div>
+									<div class="col-lg-3">
+										<label class="groupb-filter-title">Billing status</label><br>
+										<label class="small"><input type="checkbox" name="filters" onchange="searchs(this)" value="active" class="filter" />Active</label><br>
+										<label class="small"><input type="checkbox" name="filters" onchange="searchs(this)" class="filter" value="inactive" />Inactive</label>
+									</div>
+									<div class="col-lg-5" id="rowfilter1">
+										<label class="groupb-filter-title">Authentication</label><br>
+										<label class="small"><input type="checkbox" href="#" />Two-factor(2FA)</label><br>
+										<label class="small"><input type="checkbox" href="#" />SSO</label><br>
+										<label class="small"><input type="checkbox" href="#" />Default</label>
+									</div>
+								</div>
+								<div class="row" id="rowfilter">
+									<div class="col-lg-8">
+										<label class="small"><input type="checkbox" href="#" value="Deactivate" class="filter" name="deactivatedaccount" />Show deactivated accounts.</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

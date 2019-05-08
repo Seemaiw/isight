@@ -1,0 +1,110 @@
+/**//**//**//**//**//**/
+/**//*LOGIN SECTION*//*
+/**//**//**//**//**/
+body{
+	font-size:16px;
+}
+#topnav{
+	position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    z-index: 99;
+    background: #fff;
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+
+}
+.navbar-brand{
+	background: url(../img/slack1.svg) left top no-repeat;
+	background-size: 106px 60px;
+    height: 47px;
+    width: 106px;
+    float: left;
+    margin-bottom: 10px;
+}
+#navlist{
+	padding-right: 25px; 
+}
+#navlist a:hover {
+  background-color: #DCDCDC;
+  -webkit-border-radius: 5px 5px 5px 5px;
+}
+#signin{
+	margin-right: 10px;
+	cursor: pointer;
+	border: 2px solid black;
+	background-color: white;
+	color: black;
+}
+#signin:hover{
+	border-color: black;
+
+}
+.card{
+	background-color: #fff;
+    border-radius: .25rem;
+    box-shadow: 0 1px 0 rgba(0,0,0,.25);
+    padding: 2rem 2rem 1rem;
+    margin: 0 auto 2rem;
+    position: relative;
+    border: 1px solid #ddd;
+    height: 460px;
+    width: 634px;
+    margin-top: 150px;
+    font-size: 16px;
+}
+#loginform{
+	background-color: #F8F8F8;
+	height: 830px;
+	width: 100%
+}
+h1 {
+    line-height: 2.5rem;
+    letter-spacing: -1px;
+}
+#signin_header{
+	font-size: 32px;
+	font-family: Verdana, Geneva, sans-serif;
+}
+#signin_form{
+	margin-left: 65px;
+}
+input{
+	font-size: 1.25rem;
+    line-height: normal;
+    padding: .75rem;
+    border: 1px solid #868686;
+    border-radius: .25rem;
+    color: #1d1c1d;
+}
+#signin_btn{
+	width: 88%;
+	height: 50px;
+	font-family: Lato, Helvetica, sans-serif;
+	background-color: #027B5A;
+	font-size: 20px;
+
+}
+footer{
+	background-color: #fff;
+	height: 60px;
+}
+#footerslack{
+	 padding: 50px;
+	 font-size: 13px;
+	 text-decoration: none;
+}
+#footerslack ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 5px;
+}
+#last{
+  background-color: #F8F8F8;
+  height: 50px;
+}
+#contact{
+	padding-top: 15px;
+	font-size: 15px;
+	color: #616061;
+}
