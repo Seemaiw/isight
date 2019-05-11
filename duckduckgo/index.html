@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" href="" type="img/internet.ico"/>
+	<title>DuckDuckGo — Privacy, simplified.</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<ul class="nav justify-content-end" id="dropNav">
+		<li class="nav-item dropdown" id="dropLink">
+			<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Privacy, simplified.</a>
+			<div class="dropdown-menu dropdown-menu-right" id="dropMenu">
+				<a class="dropdown-item" href="#">
+					<h5 class="showcase__heading">Get Our App &amp; Extension</h5>
+					<p class="showcase__subheading">Protect your data on every device.</p>
+				</a>
+				<a class="dropdown-item" href="#">
+					<h5 class="showcase__heading">Subscribe to our Privacy Crash Course</h5>
+					<p class="showcase__subheading">Learn about online privacy right in your inbox.</p>
+				</a>
+				<a class="dropdown-item" href="#">
+					<h5 class="showcase__heading">Subscribe to our Privacy Crash Course</h5>
+					<p class="showcase__subheading">Learn about online privacy right in your inbox.</p>
+				</a>
+				<a class="dropdown-item" href="#">
+					<h5 class="showcase__heading">Protect Your Devices</h5>
+					<p class="showcase__subheading">Check out our privacy device guides.</p>
+				</a>
+				<a class="dropdown-item" href="#">
+					<h5 class="showcase__heading">Spread DuckDuckGo</h5>
+					<p class="showcase__subheading">Help your friends and family join the Duck Side!</p>
+				</a>
+				<div class="dropdown-divider"></div>
+				<a class="dropdown-item" href="https://duckduckgo.com/donations" id="navFooter">$1,300,000 in privacy donations!</a>
+				<a class="dropdown-item" href="https://duckduckgo.com/traffic" id="navFooter">Over 29 Billion anonymous searches.</a>
+				<a class="dropdown-item" href="https://donttrack.us/" id="navFooter">Learn why reducing tracking is important</a>
+			</div>
+		</li>
+		<li class="nav-item dropdown" id="dropLink">
+			<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fab fa-twitter"></i></a>
+			<div class="dropdown-menu dropdown-menu-right" id="dropMenu">
+				<a class="dropdown-item" href="#"><img src="img/twitter.png" id="img1"> Twitter</a>
+				<a class="dropdown-item" href="#"><img src="img/reddit.png" id="img1"> Reddit</a>
+				<a class="dropdown-item" href="#"><img src="img/globe1.png"> Blog</a>
+			</div>
+		</li>
+		<li class="nav-item">
+			<div id="mySidenav" class="sidenav">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+				Settings &times;</a>
+				<a href="#">More Themes</a>
+				<a href="#">Other Settings</a>
+				<a href="#">!Bang Search Shortcuts</a>
+				<a href="#">Privacy Essentials</a>
+				<a href="https://duckduckgo.com/">Private Search</a>
+				<a href="#">App and Extension</a>
+				<a href="https://spreadprivacy.com/">Why Privacy</a>
+				<a href="https://duckduckgo.com/newsletter">Privacy Blog</a>
+				<a href="#">Privacy Crash Course</a>
+				<a href="#">Help Spread Privacy</a>
+				<a href="#">Who We Are</a>
+				<a href="#">About Us</a>
+				<a href="#">Privacy Policy</a>
+				<a href="#">Careers</a>
+				<a href="#">Press Kit</a>
+				<a href="#">Keep in Touch</a>
+				<a href="https://twitter.com/duckduckgo">Twitter</a>
+				<a href="https://reddit.com/r/duckduckgo">Reddit</a>
+				<a href="https://help.duckduckgo.com/">Help</a>
+			</div>
+			<span style="cursor:pointer" onclick="openNav()"><i class="fas fa-align-justify"></i></span>
+		</li>
+	</ul>
+	<div class="containerfluid" id="mainContainer">
+		<div>
+			<div class="col-md-2 mr-auto ml-auto" id="rowdiv1">
+				<img src="img/duckduckgo.svg" class="img-fluid" id="DuckLogo">
+			</div>
+		</div>
+		<div>
+			<div class="col-md-4 mr-auto ml-auto">
+				<div class="input-group mb-3">
+						<input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2">
+					<div class="input-group-append" id="butn">
+						<button class="btn btn-outline-success" type="button"><i class="fas fa-search" id="searchIcon"></i></button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footerDuck">
+			<div class="col-md-4 mr-auto ml-auto">
+				<center>
+					<div class="tag-item">The search engine that doesn't track you.
+						<span class="hide--screen-xs"><a class="tag-item-link" href="">Help Spread DuckDuckGo!</a></span>
+					</div>
+				</center>
+			</div>
+		</div>
+	</div>
+	<script>
+		function openNav() {
+			document.getElementById("mySidenav").style.width = "250px";
+		}
+
+		function closeNav() {
+			document.getElementById("mySidenav").style.width = "0";
+		}
+	</script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
