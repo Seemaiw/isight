@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+
+<div class="container">
+    <h2> Fill Information: </h2>
+    <p> </p>
+    <form method="POST"  action="{% url 'form' %} " enctype="multipart/form-data">
+        {% csrf_token %}
+        <label for="fname">FIRST NAME</label>
+        <input type="text" name="fname">
+        <label for="lname">LAST NAME</label>
+        <input type="text" name="lname">
+        <label for="email">EMAIL</label>
+        <input type="email" name="email">
+        <label for="email">IMAGE</label>
+        <input type="file" name="document">
+        <input type="submit" class="btn btn-primary" value="Submit">
+    </form>
+</div>
+
+</body>
+</html>
