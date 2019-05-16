@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+<nav class="navbar navbar-default navbar-static-top">
+    <div class="jumbotron ml-auto mr-auto">
+        <h1>Register Here!</h1>
+        <h3>Fill out the form:</h3>
+        <form action="{% url 'submit' %}" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <label for="username">Username</label>
+            <input type="text" name="username"> <br>
+            <label for="email">Email</label>
+            <input type="email" name="email"> <br>
+            <label for="password">Password</label>
+            <input type="password" name="password"> <br>
+            <input class="btn btn-success" type="submit" value="Register">
+        </form>
+    </div>
+</nav>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-2 mr-auto ml-auto">
+            <div class="border-top pt-3">
+                <medium class="text-muted">
+                    Already Have An Account?
+                    <a class="ml-2" href="">Sign in</a>
+                </medium>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
