@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="container">
+            <ul class="nav navbar-nav">
+                <li><a class="navbar-brand" href="{% url 'form' %}">Django</a></li>
+                <li><a class="navbar-link" href="">Admin</a></li>
+                <li><a class="navbar-link" href="{% url 'registration' %}">Register</a></li>
+            </ul>
+            <div class="jumbotron">
+                {% if registered %}
+                    <h1>Thank you for registering!</h1>
+                {% else %}
+                    <h1>Register Here!</h1>
+                    <h3>FIll out the form:</h3>
+                    <form action="" method="POST" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        <label for="username">Username</label>
+                        <input type="text" name="username"> <br>
+                        <label for="password">Password</label>
+                        <input type="password" name="password"> <br>
+                        <label for="email">Email</label>
+                        <input type="email" name="email"> <br>
+                        <label for="profilesite">Profilesite</label>
+                        <input type="url" name="profilesite"> <br>
+                        <label for="image">Upload Image</label>
+                        <input type="file" name="image"> <br>
+                        <input class="btn btn-success" type="submit" value="Register">
+                    </form>
+                {% endif %}
+            </div>
+        </div>
+    </nav>
+</body>
+</html>
